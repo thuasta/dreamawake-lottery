@@ -17,62 +17,55 @@ const prizes = [
     type: 1,
     count: 2,
     text: "特等奖",
-    title: "神秘大礼",
-    img: "../img/secrit.jpg"
+    title: "",
+    img: "../img/0.png"
   },
   {
     type: 2,
-    count: 5,
+    count: 8,
     text: "一等奖",
-    title: "Mac Pro",
-    img: "../img/mbp.jpg"
+    title: "",
+    img: "../img/1.png"
   },
   {
     type: 3,
-    count: 6,
+    count: 16,
     text: "二等奖",
-    title: "华为 Mate30",
-    img: "../img/huawei.png"
+    title: "",
+    img: "../img/2.png"
   },
   {
     type: 4,
-    count: 7,
-    text: "三等奖",
-    title: "Ipad Mini5",
-    img: "../img/ipad.jpg"
+    count: 25,
+    text: "幸运奖",
+    title: "",
+    img: "../img/l1.png"
   },
   {
     type: 5,
-    count: 8,
-    text: "四等奖",
-    title: "大疆无人机",
-    img: "../img/spark.jpg"
+    count: 30,
+    text: "三等奖",
+    title: "",
+    img: "../img/3.png"
   },
   {
     type: 6,
-    count: 8,
-    text: "五等奖",
-    title: "Kindle",
-    img: "../img/kindle.jpg"
-  },
-  {
-    type: 7,
-    count: 11,
-    text: "六等奖",
-    title: "漫步者蓝牙耳机",
-    img: "../img/edifier.jpg"
+    count: 25,
+    text: "幸运奖",
+    title: "",
+    img: "../img/l2.png"
   }
 ];
 
 /**
  * 一次抽取的奖品个数与prizes对应
  */
-const EACH_COUNT = [1, 1, 5, 6, 7, 8, 9, 10];
+const EACH_COUNT = [1, 1, 4, 8, 10, 10, 10];
 
 /**
  * 卡片公司名称标识
  */
-const COMPANY = "MoShang";
+const COMPANY = "DreamAwake";
 
 module.exports = {
   prizes,
