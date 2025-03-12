@@ -493,7 +493,7 @@ button:active {
   color: rgba(127, 255, 255, 0.75);
 }
 
-.music {
+/* .music {
   position: fixed;
   top: 3vh;
   right: 4vh;
@@ -530,7 +530,7 @@ button:active {
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 .margin-l-40 {
   margin-left: 40px;

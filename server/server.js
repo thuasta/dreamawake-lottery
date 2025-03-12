@@ -2,7 +2,7 @@ const express = require("express");
 const opn = require("opn");
 const bodyParser = require("body-parser");
 const path = require("path");
-const chokidar = require("chokidar");
+// const chokidar = require("chokidar");
 const cfg = require("./config");
 
 const {

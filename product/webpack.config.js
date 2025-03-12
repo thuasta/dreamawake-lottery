@@ -1,5 +1,5 @@
 const webpack = require("webpack");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+// const CleanWebpackPlugin = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
@@ -58,10 +58,10 @@ module.exports = {
         from: "./src/css",
         to: "./css"
       },
-      {
-        from: "./src/data",
-        to: "./data"
-      },
+      // {
+      //   from: "./src/data",
+      //   to: "./data"
+      // },
       {
         from: "./src/img",
         to: "./img"
