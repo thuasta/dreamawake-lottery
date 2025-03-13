@@ -4,7 +4,6 @@ volumes:
   lottery_log:
 services:
   lottery:
-    container_name: lottery
     build:
       context: .
       dockerfile: Dockerfile
