@@ -13,4 +13,10 @@ services:
       - "28458:8888"
     volumes:
       - "lottery_log:/var/log"
+    networks:
+      - web
     restart: always
+
+networks:
+  web:
+    external: true
