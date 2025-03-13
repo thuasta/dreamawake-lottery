@@ -2,11 +2,11 @@ version: '3.8'
 
 volumes:
   lottery_log:
+
 services:
   lottery:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: lottery:latest
+    container_name: lottery
     expose:
       - 8888
     ports:
