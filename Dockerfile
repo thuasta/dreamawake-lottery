@@ -4,14 +4,11 @@ FROM node:16.14.0-buster
 # Upgrade npm to the latest version
 RUN npm install -g npm@9.6.2
 
-# Set the author of the Dockerfile
-LABEL maintainer="YIN"
-
-# Add the application source code to the container
-ADD lottery.tar.gz  /
-
 # Set the working directory to the root directory of the application
 WORKDIR /lottery
+
+# Copy the application source code to the container
+COPY . /lottery/
 
 # Set the ownership of the application directory to root
 RUN chown -R root /lottery \
@@ -23,8 +20,8 @@ RUN chown -R root /lottery \
     # Build the application
     && npm run build
 
-# Expose port 8080 to the outside world
-EXPOSE 8080
+# Expose port 8888 to the outside world
+EXPOSE 8888
 
 # Set the working directory to the product directory
 WORKDIR /lottery/product
