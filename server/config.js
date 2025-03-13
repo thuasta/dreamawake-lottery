@@ -17,42 +17,42 @@ const prizes = [
     type: 1,
     count: 2,
     text: "特等奖",
-    title: "",
+    title: "特等奖",
     img: "../img/0.png"
   },
   {
     type: 2,
     count: 8,
     text: "一等奖",
-    title: "",
+    title: "一等奖",
     img: "../img/1.png"
   },
   {
     type: 3,
     count: 16,
     text: "二等奖",
-    title: "",
+    title: "二等奖",
     img: "../img/2.png"
   },
   {
     type: 4,
     count: 25,
     text: "幸运奖",
-    title: "",
+    title: "幸运奖",
     img: "../img/l1.png"
   },
   {
     type: 5,
     count: 30,
     text: "三等奖",
-    title: "",
+    title: "三等奖",
     img: "../img/3.png"
   },
   {
     type: 6,
     count: 25,
     text: "幸运奖",
-    title: "",
+    title: "幸运奖",
     img: "../img/l2.png"
   }
 ];

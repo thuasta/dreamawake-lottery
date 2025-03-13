@@ -5,11 +5,13 @@ volumes:
 services:
   lottery:
     container_name: lottery
+    build:
+      context: .
+      dockerfile: Dockerfile
     expose:
-      - 28458
+      - 8888
     ports:
       - "28458:8888"
     volumes:
       - "lottery_log:/var/log"
-    image: "panda1024/lottery:v0.3"
     restart: always

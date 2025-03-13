@@ -12,7 +12,7 @@ import { NUMBER_MATRIX } from "./config.js";
 
 const ROTATE_TIME = 3000;
 const ROTATE_LOOP = 1000;
-const BASE_HEIGHT = 1080;
+// const BASE_HEIGHT = 1080;
 
 let TOTAL_CARDS,
   btns = {
@@ -115,13 +115,13 @@ function initAll() {
 
 function initCards() {
   let member = basicData.users.slice(),
-    showCards = [],
+    // showCards = [],
     length = member.length;
 
   let isBold = false,
     showTable = basicData.leftUsers.length === basicData.users.length,
     index = 0,
-    totalMember = member.length,
+    // totalMember = member.length,
     position = {
       x: (140 * COLUMN_COUNT - 20) / 2,
       y: (180 * ROW_COUNT - 20) / 2
@@ -822,51 +822,51 @@ function createHighlight() {
   return highlight;
 }
 
-let onload = window.onload;
+// let onload = window.onload;
 
-window.onload = function () {
-  onload && onload();
+// window.onload = function () {
+//   onload && onload();
 
-  let music = document.querySelector("#music");
+//   let music = document.querySelector("#music");
 
-  let rotated = 0,
-    stopAnimate = false,
-    musicBox = document.querySelector("#musicBox");
+//   let rotated = 0,
+//     stopAnimate = false,
+//     musicBox = document.querySelector("#musicBox");
 
-  function animate() {
-    requestAnimationFrame(function () {
-      if (stopAnimate) {
-        return;
-      }
-      rotated = rotated % 360;
-      musicBox.style.transform = "rotate(" + rotated + "deg)";
-      rotated += 1;
-      animate();
-    });
-  }
+//   function animate() {
+//     requestAnimationFrame(function () {
+//       if (stopAnimate) {
+//         return;
+//       }
+//       rotated = rotated % 360;
+//       musicBox.style.transform = "rotate(" + rotated + "deg)";
+//       rotated += 1;
+//       animate();
+//     });
+//   }
 
-  musicBox.addEventListener(
-    "click",
-    function (e) {
-      if (music.paused) {
-        music.play().then(
-          () => {
-            stopAnimate = false;
-            animate();
-          },
-          () => {
-            addQipao("背景音乐自动播放失败，请手动播放！");
-          }
-        );
-      } else {
-        music.pause();
-        stopAnimate = true;
-      }
-    },
-    false
-  );
+//   musicBox.addEventListener(
+//     "click",
+//     function (e) {
+//       if (music.paused) {
+//         music.play().then(
+//           () => {
+//             stopAnimate = false;
+//             animate();
+//           },
+//           () => {
+//             addQipao("背景音乐自动播放失败，请手动播放！");
+//           }
+//         );
+//       } else {
+//         music.pause();
+//         stopAnimate = true;
+//       }
+//     },
+//     false
+//   );
 
-  setTimeout(function () {
-    musicBox.click();
-  }, 1000);
-};
+//   setTimeout(function () {
+//     musicBox.click();
+//   }, 1000);
+// };
