@@ -15,14 +15,14 @@ const prizes = [
   },
   {
     type: 1,
-    count: 2,
+    count: 1,
     text: "特等奖",
     title: "特等奖",
     img: "../img/0.png"
   },
   {
     type: 2,
-    count: 8,
+    count: 6,
     text: "一等奖",
     title: "一等奖",
     img: "../img/1.png"
@@ -35,32 +35,18 @@ const prizes = [
     img: "../img/2.png"
   },
   {
-    type: 4,
-    count: 25,
-    text: "幸运奖",
-    title: "幸运奖",
-    img: "../img/l1.png"
-  },
-  {
     type: 5,
     count: 30,
     text: "三等奖",
     title: "三等奖",
     img: "../img/3.png"
   },
-  {
-    type: 6,
-    count: 25,
-    text: "幸运奖",
-    title: "幸运奖",
-    img: "../img/l2.png"
-  }
 ];
 
 /**
  * 一次抽取的奖品个数与prizes对应
  */
-const EACH_COUNT = [1, 1, 4, 8, 10, 10, 10];
+const EACH_COUNT = [1, 1, 3, 4, 6];
 
 /**
  * 卡片公司名称标识
