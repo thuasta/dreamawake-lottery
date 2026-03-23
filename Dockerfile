@@ -12,8 +12,6 @@ COPY . /lottery/
 
 # Set the ownership of the application directory to root
 RUN chown -R root /lottery \
-    # Remove the line that opens the default browser when starting the server
-    && sed -i '/openBrowser/ d' ./server/server.js \
     # Install dependencies for the server and product directories
     && cd server && npm install \
     && cd ../product && npm install \
@@ -25,6 +23,9 @@ EXPOSE 8888
 
 # Set the working directory to the product directory
 WORKDIR /lottery/product
+
+# Do not auto-open browser when running inside container
+ENV NO_OPEN=true
 
 # Start the server
 CMD ["npm", "run", "serve"]
