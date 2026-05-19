@@ -22,36 +22,36 @@ const prizes = [
   },
   {
     type: 2,
-    count: 6,
+    count: 2,
     text: "一等奖",
     title: "一等奖",
-    img: "../img/1.png"
+    img: ""
   },
   {
     type: 3,
-    count: 16,
+    count: 10,
     text: "二等奖",
     title: "二等奖",
-    img: "../img/2.jpg"
+    img: ""
   },
-  {
-    type: 5,
-    count: 30,
-    text: "三等奖",
-    title: "三等奖",
-    img: "../img/3.png"
-  },
+  // {
+  //   type: 5,
+  //   count: 30,
+  //   text: "三等奖",
+  //   title: "三等奖",
+  //   img: "../img/3.png"
+  // },
 ];
 
 /**
  * 一次抽取的奖品个数与prizes对应
  */
-const EACH_COUNT = [1, 1, 3, 4, 6];
+const EACH_COUNT = [1, 1, 1, 5];
 
 /**
  * 卡片公司名称标识
  */
-const COMPANY = "零极岛";
+const COMPANY = "Sing to Nine";
 
 module.exports = {
   prizes,

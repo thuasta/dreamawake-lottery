@@ -1,6 +1,6 @@
 # Tsinghua Automation Student Festival Lottery Program
 
-清华大学自动化系 2025 & 2026 年 DreamAwake 学生节抽奖程序，基于 [lottery](https://github.com/moshang-ax/lottery) 项目开发。
+清华大学自动化系 2025 DreamAwake & 2026 年 零极岛学生节抽奖程序，基于 [lottery](https://github.com/moshang-ax/lottery) 项目开发。
 
 ## 技术
 
