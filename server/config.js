@@ -18,7 +18,7 @@ const prizes = [
     count: 1,
     text: "特等奖",
     title: "特等奖",
-    img: "../img/0.png"
+    img: ""
   },
   {
     type: 2,
